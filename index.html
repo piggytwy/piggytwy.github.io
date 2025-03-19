@@ -10,14 +10,14 @@
       }
     </style>
     <script>
-      function redirectToURL() {
-        var dropdown = document.getElementById("dropdown");
-        var url = dropdown.value;
-        if (url) {
-          window.location.href = url;
-        }
-      }
-    </script>
+  function redirectToURL() {
+    var dropdown = document.getElementById("dropdown");
+    var url = dropdown.value;
+    if (url) {
+      window.open(url, '_blank');
+    }
+  }
+</script>
   </head>
   <body>
     <select id="dropdown" onchange="redirectToURL()">
