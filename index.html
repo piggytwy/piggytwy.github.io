@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      /* Optional: style your dropdown */
+      select {
+        font-size: 16px;
+        padding: 5px;
+      }
+    </style>
+    <script>
+      function redirectToURL() {
+        var dropdown = document.getElementById("dropdown");
+        var url = dropdown.value;
+        if (url) {
+          window.location.href = url;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <select id="dropdown" onchange="redirectToURL()">
+      <option value="">-請選擇營運單位-</option>
+      <option value="https://drive.google.com/drive/folders/1z6OiKP1jP48BIBVuNovNR1m8Deyahnwr?usp=drive_link">Bangladesh 孟加拉</option>
+      <option value="https://drive.google.com/drive/folders/1fWJxFsr6lqBUwn7NPkoEiQ0_RadJKSOH?usp=drive_link">Cambodia 柬埔寨</option>
+      <option value="https://drive.google.com/drive/folders/1GWDGbH3w0G5x94cMwXbODhFWMJsNTDeY?usp=drive_link">Canada 加拿大</option>
+    </select>
+  </body>
+</html>
